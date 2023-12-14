@@ -4,7 +4,15 @@
 <title>Webville Tunes</title>
 <meta charset="utf-8">
 <script src="playlist.js"></script>
+<script src="inks.js"></script>
+<script>
+    function init() {
+  setValidationLinks();
+  setUpButtonHandler();    
+}
 
+window.onload = init;
+</script>
 <link rel="stylesheet" href="playlist.css">
 </head>
 <body>
@@ -17,5 +25,10 @@
 </ul>
 
 </body>
-
+<footer>
+    <a id="vLink1">
+    <strong> HTML </strong> Valid! </a> | 
+    <a id="vLink2">
+    <strong> CSS </strong> Valid! </a>
+    </footer> 
 </html>
