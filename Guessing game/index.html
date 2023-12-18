@@ -3,7 +3,30 @@
 <head>
 <meta charset="utf-8">
 
-    <script>
+  
+ <style>
+        html {
+          font-family: sans-serif;
+        }
+  
+        body {
+          width: 50%;
+          max-width: 800px;
+          min-width: 480px;
+          margin: 0 auto;
+        }
+        
+        .form input[type="number"] {
+          width: 200px;
+        }
+  
+        .lastResult {
+          color: white;
+          padding: 3px;
+        }
+      </style>
+
+   <script>
 function addValidation() {
   var loc = window.location.href;
   var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
