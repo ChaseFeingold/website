@@ -14,9 +14,13 @@ body {
     min-width: 480px;
     margin: 0 auto;
   }
+  p.thicker {
+  font-weight:900;
+}
 
-
-
+body {
+  font-size: 25px;
+}
        </style>
        
        
@@ -68,6 +72,7 @@ body {
         <h4>Event Handler Examples</h4>
         Vote for your favorite Popcor Flavour:
         <form name="myform">
+            <p class="thicker">
             <input type="radio" name="sports" value="Caramel" />Caramel<br/>
             <input type="radio" name="sports" value="Cookies and cream" />Cookies and cream<br/>
             <input type="radio" name="sports" value="Chedder" />Chedder<br/>
@@ -76,6 +81,7 @@ body {
             <input type="radio" name="sports" value="Chocolate" />Chocolate<br/>
             <input type="radio" name="sports" value="Garlic" />Garlic<br/>
             <input type="radio" name="sports" value="Other" />Other<br/>
+            </p>
             <p><input type="button" value="VOTE" onclick="vote()" /> <input type="reset" value="RESET" /></p>
             <p><input type="text" id="txt" size="40" onblur="upperCase()" /> Click in then out!</p>
             <p><input type="text" id="txt1" size="40" onmouseover="SayHello()" /> Hover over this field!</p>
