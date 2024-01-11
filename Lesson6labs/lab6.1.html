@@ -5,14 +5,14 @@
         <title>Favorite Popcorn Flavour</title>
         <script>
             function vote() {
-                var t = "Your favorite sport is: ";
+                var t = "Your favorite Popcorn Flavour is: ";
                 for (i = 0; i < document.myform.sports.length; i++) {
                     if (document.myform.sports[i].checked == true) {
                         t = t + document.myform.sports[i].value;
                     }
                 }
                 if (t == "Your favorite sport is: ") {
-                    document.getElementById("txt").value = "Choose a sport";
+                    document.getElementById("txt").value = "Choose a Flavour";
                 } else {
                     document.getElementById("txt").value = t;
                     document.getElementById("txt1").value = t;
@@ -29,7 +29,17 @@
             function SayGoodbye() {
                 alert("Your mouse has left the text!");
             }
-        </script>
+           function init() {
+    var loc = window.location.href;
+    var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+    var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                          loc + '?profile=css3';
+    document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+    document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+  }
+  window.onload = init;
+  </script>
+        
     </head>
     <body>
         <h3>CIW Advanced HTML5 and CSS3 Specialist</h3>
@@ -38,7 +48,7 @@
         Vote for your favorite sport:
         <form name="myform">
             <input type="radio" name="sports" value="Caramel" />Caramel<br/>
-            <input type="radio" name="sports" value="Cookies and cream" />Cookies and cream<b />
+            <input type="radio" name="sports" value="Cookies and cream" />Cookies and cream<br/>
             <input type="radio" name="sports" value="Chedder" />Chedder<br/>
             <input type="radio" name="sports" value="Butter" />Butter<br/>
             <input type="radio" name="sports" value="Gourmet" />Gourmet<br/>
