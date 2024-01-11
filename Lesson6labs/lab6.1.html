@@ -21,6 +21,7 @@ body {
 body {
   font-size: 25px;
 }
+
        </style>
        
        
@@ -61,7 +62,13 @@ body {
     document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
   }
   window.onload = init;
-
+    /***********************************************
+    A function named myFunction() is defined.
+    The function displays an alert() when invoked.
+    ***********************************************/
+    function myFunction() {
+        alert("The HTML page has loaded.");
+    }
  
   </script>
         
@@ -90,6 +97,7 @@ body {
         <div class="content">
             <h2 class="text_shadows">I LOVE POPCORN</h2>
           </div>
+          <body onload="myFunction();">
     </body>
    
 <footer>
