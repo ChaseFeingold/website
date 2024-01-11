@@ -1,49 +1,56 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <script>
-        /***********************************************
-        A function named myFunction() is defined.
-        The function displays an alert() when invoked.
-        ***********************************************/
-        function myFunction() {
-            alert("The HTML page has loaded.");
-        }
-        <body onload="myFunction();"></body>
-          /***********************************************
-            A function named myFunction() is defined.
-            The function displays an alert() when invoked.
-            ***********************************************/
-            function myFunction() {
-                var a = 1;
-                var b = 2;
-                var c = "The answer is  " + a + b;
-                alert(c);
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Favorite Popcorn Flavour</title>
+        <script>
+            function vote() {
+                var t = "Your favorite sport is: ";
+                for (i = 0; i < document.myform.sports.length; i++) {
+                    if (document.myform.sports[i].checked == true) {
+                        t = t + document.myform.sports[i].value;
+                    }
+                }
+                if (t == "Your favorite sport is: ") {
+                    document.getElementById("txt").value = "Choose a sport";
+                } else {
+                    document.getElementById("txt").value = t;
+                    document.getElementById("txt1").value = t;
+                    document.getElementById("txt2").value = t;
+                }
             }
-    </script>
-       </head>
-       <!-- Add an onload event handler to call the function -->
-       <body onload="myFunction();">
-           <h3>CIW Advanced HTML5 and CSS3 Specialist</h3>
-           <hr/>
-<style>
-h1 {
-  font-weight: bold;
-  color: #040303;
-  font-size: 45px;
-}
-
-h2 {
-  font-weight: bold;
-  color: #932d2d;
-  font-size: 25px;
-}
-
-</style>
-
-</head>
-<body>
-
+            function upperCase() {
+                var x = document.getElementById("txt").value;
+                document.getElementById("txt").value = x.toUpperCase();
+            }
+            function SayHello() {
+                alert("Your mouse is over the text!");
+            }
+            function SayGoodbye() {
+                alert("Your mouse has left the text!");
+            }
+        </script>
+    </head>
+    <body>
+        <h3>CIW Advanced HTML5 and CSS3 Specialist</h3>
+        <hr/>
+        <h4>Event Handler Examples</h4>
+        Vote for your favorite sport:
+        <form name="myform">
+            <input type="radio" name="sports" value="Caramel" />Caramel<br/>
+            <input type="radio" name="sports" value="Cookies and cream" />Cookies and cream<b />
+            <input type="radio" name="sports" value="Chedder" />Chedder<br/>
+            <input type="radio" name="sports" value="Butter" />Butter<br/>
+            <input type="radio" name="sports" value="Gourmet" />Gourmet<br/>
+            <input type="radio" name="sports" value="Chocolate" />Chocolate<br/>
+            <input type="radio" name="sports" value="Garlic" />Garlic<br/>
+            <input type="radio" name="sports" value="Other" />Other<br/>
+            <p><input type="button" value="VOTE" onclick="vote()" /> <input type="reset" value="RESET" /></p>
+            <p><input type="text" id="txt" size="40" onblur="upperCase()" /> Click in then out!</p>
+            <p><input type="text" id="txt1" size="40" onmouseover="SayHello()" /> Hover over this field!</p>
+            <p><input type="text" id="txt2" size="40" onmouseout="SayGoodbye()" /> Hover this field then away!</p>
+        </form>
+    </body>
    
 <footer>
   <a id="vLink1">
