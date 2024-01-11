@@ -69,7 +69,10 @@ body {
     function myFunction() {
         alert("The HTML page has loaded.");
     }
- 
+    <!-- Add an onclick event handler to call the function -->
+<form name="myForm">
+    <input type="button" value="Call Function" onclick="myFunction();" />
+</form>
   </script>
         
     </head>
@@ -98,6 +101,17 @@ body {
             <h2 class="text_shadows">I LOVE POPCORN</h2>
           </div>
           <body onload="myFunction();">
+            <form name="myForm">
+    <input type="button" value="Call Function" onclick="myFunction('a string of text');" />
+</form>
+function myFunction(arg1) {
+    alert("The function has been called and was passed " + arg1);
+    return "myFunction() return value";
+}
+<form name="myForm">
+    <input type="button" value="Call Function" onclick="alert(myFunction('a string of text'));" />
+</form>
+
     </body>
    
 <footer>
