@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>CIW Lab 6-3</title>
+    <link rel="Stylesheet" href="../style.css">
+<script>
+
+    let numCorrect = 0;
+        
+    function takeTest() {
+    let response="";
+        let points = 0;
+        
+        let q1 = "What sport did Babe Ruth play?";
+        let a1 = "Baseball";
+        
+        let q2 = "What is the answer to 5+2*2";
+        let a2 = 9;
+        
+        let q3 = "What is the best sport?";
+        let a3 = "Soccer";
+        
+        response = prompt(q1,"");
+        if (response) points = runningTotal((response.toUpperCase() == a1) ? 1 : 0);
+        console.log(points);
+        
+        response = prompt(q2,"");
+        if (response) points = runningTotal((response == a2) ? 1 : 0);
+        console.log(points);
+        
+        response = prompt(q3,"");
+        if (response) points = runningTotal((response.toUpperCase() == a3) ? 1 : 0);
+        console.log("You answered a total of " + points + " correctly.");
+        
+        numCorrect = 0;
+        points = 0;
+    }
+        
+    function runningTotal(i) {
+        numCorrect += i; 
+        return numCorrect;
+    }
+        
+        </script>
+        
+        </head>
+        
+        <body>
+        
+        <h3>CIW Advanced HTML5 and CSS3 Specialist</h3>
+        <hr/>
+        Take an online quiz.
+        <p>
+        <form name="myform">
+        <input type="button" value="Take Quiz" onclick="takeTest();" />
+        </form>
+        </p>
+        <p>Afterwords Check Console For Score</p>
+        
+        
+        </body>
+</html>
+
