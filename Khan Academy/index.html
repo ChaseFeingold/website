@@ -1,37 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Khan </title>
-
-
-<script>
-  function init() {
-    var loc = window.location.href;
-    var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
-    var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
-                          loc + '?profile=css3';
-    document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
-    document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
-  }
-  window.onload = init;
-  </script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <title>Khan Academy</title>
 </head>
 <body>
+  <script>
+      <h1>Welcome to my Khan Academy Page!</h1>
+    // Your p5.js code goes here
+    function setup() {
+      createCanvas(400, 400);  
+      noStroke();
 
-  <h1> Khan</h1>
- 
-  <u>
-    <li><a href="smileyface">Smileryface</a></li>
+      // face
+      fill(255, 255, 0);
+      ellipse(202, 208, 300, 300);
 
-  </u>
- 
+      // eyes
+      fill(46, 46, 41);
+      ellipse(157, 151, 40, 40);
+      ellipse(304, 142, 40, 40);
 
-</body>
-<footer>
-  <a id="vLink1"><strong> HTML </strong> Valid! </a> |
-  <a id="vLink2"><strong> CSS </strong> Valid! </a>
-  </footer>
-
+      // mouth
+      fill(252, 65, 65);
+      ellipse(257, 240, 120, 136);
+    } 
+  </script>
+<script type='text/javascript'  src="smileyface.js"></script></body>
 </html>
