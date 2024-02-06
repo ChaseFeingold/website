@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <title>Khan Academy</title>
+</head>
+
+<body>
+    <h1>Canvas 1</h1>
+<script>
+      // the starting size for the sun
+var sunSize = 30; 
+draw = function() {
+    noStroke();
+// the beautiful blue sky
+background(82, 222, 240);
+    // The sun, a little circle on the horizon
+fill(255, 204, 0);
+ellipse(200, 298, sunSize, sunSize);
+
+// The land, blocking half of the sun
+fill(76, 168, 67);
+rect(0, 300, 400, 100); 
+
+sunSize=sunSize+1;
+};
+</script>
+</body>
+<script type='text/javascript'  src="smileyface.js"></script></body>
+</html>

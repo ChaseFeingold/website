@@ -10,70 +10,13 @@
 <body>
     <h1>Khan Academy</h1>
 
-    <script>
-    // Your p5.js code goes here
-    function setup() {
-      createCanvas(400, 400);  
-      noStroke();
-
-      // face
-      fill(255, 255, 0);
-      ellipse(202, 208, 300, 300);
-
-      // eyes
-      fill(46, 46, 41);
-      ellipse(157, 151, 40, 40);
-      ellipse(304, 142, 40, 40);
-
-      // mouth
-      fill(252, 65, 65);
-      ellipse(257, 240, 120, 136);
-    }
-    // the starting size for the sun
-var sunSize = 30; 
-draw = function() {
-    noStroke();
-// the beautiful blue sky
-background(82, 222, 240);
-    // The sun, a little circle on the horizon
-fill(255, 204, 0);
-ellipse(200, 298, sunSize, sunSize);
-
-// The land, blocking half of the sun
-fill(76, 168, 67);
-rect(0, 300, 400, 100); 
-
-sunSize=sunSize+1;
-};
-
-noStroke();
-var leftX = 150;
-var rightX = 250;
-var sunRadius = 100;
-
-draw = function() {
-    background(184, 236, 255);
-    
-    fill(255, 170, 0);
-    ellipse(200, 100, sunRadius, sunRadius);
-    
-    // clouds 
-    fill(255, 255, 255);
-    // left cloud
-    ellipse(leftX, 150, 126, 97);
-    ellipse(leftX+62, 150, 70, 60);
-    ellipse(leftX-62, 150, 70, 60);
-    
-    // right cloud
-    ellipse(rightX, 100, 126, 97);
-    ellipse(rightX+62, 100, 70, 60);
-    ellipse(rightX-62, 100, 70, 60);
-  
-    leftX-=1;
-    rightX+=1;
-    sunRadius+=2;
-    
-};
-  </script>
-<script type='text/javascript'  src="smileyface.js"></script></body>
+   
+<script type='text/javascript'  src="smileyface.js"></script>
+<u> 
+  <li><a href="canvas1.html"> Canvas 1 </a></li>
+  <li><a href="canvas2.html"> Canvas 2</a></li>
+    <li><a href="canvas3.html"> Canvas 3</a></li
+   
+  </u>
+</body>
 </html>
