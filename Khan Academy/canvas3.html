@@ -21,6 +21,10 @@ draw = function() {
     fill(255, 170, 0);
     ellipse(200, 100, sunRadius, sunRadius);
     
+    leftX-=1;
+    rightX+=1;
+    sunRadius+=2;
+
     // clouds 
     fill(255, 255, 255);
     // left cloud
@@ -32,14 +36,11 @@ draw = function() {
     ellipse(rightX, 100, 126, 97);
     ellipse(rightX+62, 100, 70, 60);
     ellipse(rightX-62, 100, 70, 60);
-  
-    leftX-=1;
-    rightX+=1;
-    sunRadius+=2;
+   
     
 };
 </script>
-</body>
+
 <script type='text/javascript'  src="smileyface.js"></script>
 </body>
 </html>
