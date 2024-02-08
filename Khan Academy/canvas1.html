@@ -1,48 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
- <title>Khan Academy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <title>Khan Academy</title>
 </head>
 
 <body>
-   <h1>Canvas 3</h1>
-   <script>
-       var leftX = 150;
-       var rightX = 250;
-       var sunRadius = 100;
+    <h1>Canvas 1</h1>
+<script>
+    // Your p5.js code goes here
+    function setup() {
+      createCanvas(400, 400);  
+      noStroke();
 
-       function setup() {
-           createCanvas(400, 200);
-           noStroke();
-       }
+      // face
+      fill(255, 255, 0);
+      ellipse(202, 208, 300, 300);
 
-       function draw() {
-           background(184, 236, 255);
+      // eyes
+      fill(46, 46, 41);
+      ellipse(157, 151, 40, 40);
+      ellipse(304, 142, 40, 40);
 
-           fill(255, 170, 0);
-           ellipse(200, 100, sunRadius, sunRadius);
-
-           // clouds
-           fill(255, 255, 255);
-           // left cloud
-           ellipse(leftX, 150, 126, 97);
-           ellipse(leftX + 62, 150, 70, 60);
-           ellipse(leftX - 62, 150, 70, 60);
-
-           // right cloud
-           ellipse(rightX, 100, 126, 97);
-           ellipse(rightX + 62, 100, 70, 60);
-           ellipse(rightX - 62, 100, 70, 60);
-           
-           leftX -= 1;
-           rightX += 1;
-           sunRadius += 2;
-       }
-   </script>
-
-   <script type='text/javascript'  src="khan.js"></script>
+      // mouth
+      fill(252, 65, 65);
+      ellipse(257, 240, 120, 136);
+    }
+</script>
 </body>
+<script type='text/javascript'  src="smileyface.js"></script></body>
 </html>
