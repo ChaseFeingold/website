@@ -10,6 +10,12 @@
 <body>
     <h1>Canvas 2</h1>
 <script>
+    function setup() {
+      createCanvas(400, 400);  
+      noStroke();
+    }
+   
+    function draw() {
 background(0, 255, 225);
 fill(255, 0, 0);
 textSize(19);
@@ -23,6 +29,7 @@ fill(255, 255, 255);
 
 
 arc(185,217,141,178,0,180);
+
 arc(185,200,126,-66,0,180);
 
 ellipse(166,200,25,50);
@@ -36,7 +43,7 @@ ellipse(201,187,38,27);
 fill(252, 252, 252);
 ellipse(145,186,-13,16);
 ellipse(195,187,-13,16);
-
+    }
 </script>
 
 <script type='text/javascript'  src="khan.js"></script></body>
