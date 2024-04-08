@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-import bottle
-
 @bottle.route('/')
-@bottle.route('/<name>')
-def index(name='World'):
-    the_message = f'Hello {name}!'
-    return bottle.template('template', message=the_message)
+def index():
+     return bottle.template('index')
 
-bottle.run(host='0.0.0.0', port=8090)
+ @bottle.route('/<name>')
+ def message(name):
+     the_message = f'Hello {name}!'
+     return bottle.template('message_template', message=the_message)
+
+ bottle.run(host='0.0.0.0' port=8090)
