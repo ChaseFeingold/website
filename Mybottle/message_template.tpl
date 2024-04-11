@@ -49,7 +49,7 @@ window.onload = add_validation_links;
 <p>Add <code>/[message]</code> (example: <code>/New York</code>) to change
 the message.</p>
 </main>
-<h1>Hello World</h1>
+<h1>{{message}}</h1>
 <footer>
 <a id="vLink1">
 <strong> HTML </strong> Valid! </a> | 
