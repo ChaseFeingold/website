@@ -12,11 +12,15 @@ border: 1px solid black;
 <body>
 <canvas id="lookwhatIdrew" width="900" height="300"></canvas>
 <script>
+function drawCircle(canvas, context) {
+    
+    
 context.beginPath();
 context.arc(100, 100, 75, degreesToRadians(270), 0, true);
+context.fillStyle = "lightblue"; 
+context.fill();
+}
 </script>
-
-
 
 
 </body>
