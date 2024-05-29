@@ -1,12 +1,17 @@
 
-var x = 200;
+var y = 200;
 function animate() {
     requestAnimationFrame(animate);
+    c.clearRect(0,0,innerWidth,innerHeight);
+
     console.log();
     c.beginpath();
-    c.arc(200,200,30,0, Math.PI*2,false);
+    c.arc(200,y,30,0, Math.PI*2,false);
     c.strokeStyle='blue'
     c.stroke();
-    
+    y +=1;
+
+
+
 }
 animate();
