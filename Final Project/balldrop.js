@@ -1,3 +1,8 @@
+var canvas = document.getElementById("balldrop");
+var context = canvas.getContext("2d");
+
+
+
 
 var y = 200;
 var dy = 1;
