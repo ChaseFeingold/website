@@ -1,5 +1,6 @@
 
 var y = 200;
+var yx = 1;
 function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0,0,innerWidth,innerHeight);
