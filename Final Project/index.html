@@ -8,26 +8,27 @@ canvas {
 border: 1px solid black;
 }
 </style>
+<script>
+  window.onload = function() {
+    var canvas = document.getElementById("balldrop");
+  
+    var context = canvas.getContext("2d");
+    context.fillRect(10, 10, 100, 100);
+  
+  
+  };
+  
+  
+    </script>
 </head>
 
 <body>
 
   <canvas id="balldrop" width="1420" height="760">
 
-  <script src="balldrop.js"></script>
-
-  <script>
-window.onload = function() {
-  var canvas = document.getElementById("balldrop");
-
-  var context = canvas.getContext("2d");
-  context.fillRect(10, 10, 100, 100);
-
-
-};
-
-
-  </script>
+  <script type='text/javascript' src="balldrop.js"></script>
+</body>
+ 
 
 </canvas> 
 </body>
