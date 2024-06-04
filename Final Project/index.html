@@ -11,10 +11,31 @@ border: 1px solid black;
 <script>
   window.onload = function() {
     var canvas = document.getElementById("balldrop");
-  
-    var context = canvas.getContext("2d");
-    context.fillRect(10, 10, 100, 100);
-  
+var context = canvas.getContext("2d");
+
+
+
+
+var y = 200;
+var dy = 1;
+var radius = 30;
+function animate() {
+    requestAnimationFrame(animate);
+    c.clearRect(0,0,innerWidth,innerHeight);
+
+    console.log();
+    c.beginpath();
+    c.arc(200,y,30,0, Math.PI*2,false);
+    c.strokeStyle='blue'
+    c.stroke();
+    c.fill;
+    if (y + radius > innerHeight || x- radius<0){
+        dy= -dy
+    }
+    y +=dy;
+}
+animate();
+
   
   };
   
@@ -24,12 +45,12 @@ border: 1px solid black;
 
 <body>
 
-  <canvas id="balldrop" width="1420" height="760">
+  <canvas id="balldrop" width="1420" height="760"></canvas> 
 
-  <script type='text/javascript' src="balldrop.js"></script>
+  <script type='text/module' src="balldrop.js"></script>
 </body>
  
 
-</canvas> 
+
 </body>
 </html>

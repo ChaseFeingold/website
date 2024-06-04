@@ -17,15 +17,9 @@ function animate() {
     c.strokeStyle='blue'
     c.stroke();
     c.fill;
-if (y + radius > innerHeight || x- radius<0){
-
- dy= -dy
-}
-
-
+    if (y + radius > innerHeight || x- radius<0){
+        dy= -dy
+    }
     y +=dy;
-
-
-
 }
 animate();
