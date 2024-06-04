@@ -19,7 +19,7 @@ function animate() {
     c.fill;
 if (y + radius > innerHeight || x- radius<0){
 
- dy= -dy;
+ dy= -dy
 }
 
 
