@@ -11,6 +11,19 @@ border: 1px solid black;
 <script>
   window.onload = function() {
     var canvas = document.getElementById("balldrop");
+  
+    var context = canvas.getContext("2d");
+};
+  
+  
+    </script>
+</head>
+
+<body>
+
+  <canvas id="balldrop" width="1420" height="760"></canvas> 
+<script>
+  var canvas = document.getElementById("balldrop");
 var context = canvas.getContext("2d");
 
 
@@ -34,23 +47,8 @@ function animate() {
     }
     y +=dy;
 }
-animate();
-
-  
-  };
-  
-  
-    </script>
-</head>
-
-<body>
-
-  <canvas id="balldrop" width="1420" height="760"></canvas> 
-
-  <script type='text/module' src="balldrop.js"></script>
-</body>
- 
-
-
+      window.onload = animate;
+      animate();
+   </script>
 </body>
 </html>
