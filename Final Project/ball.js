@@ -2,7 +2,7 @@
   const canvas = document.getElementById(balldrop)
   const ctx = canvas.getContext('2d')
 
-  
+
 var y = 200;
 var dy = 1;
 var radius = 30;
@@ -21,5 +21,5 @@ function animate() {
     }
     y +=dy;
 }
-      window.onload = animate;
-      animate();
+  requestAnimationFrame(update);
+  update();
