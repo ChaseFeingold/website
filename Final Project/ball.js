@@ -1,4 +1,7 @@
 
+  const canvas = document.getElementById(balldrop)
+  const ctx = canvas.getContext('2d')
+
   
 var y = 200;
 var dy = 1;
