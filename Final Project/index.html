@@ -8,13 +8,6 @@ canvas {
 border: 1px solid black;
 }
 </style>
-  <script>
-  window.onload = function() {
-    var canvas = document.getElementById("balldrop");
-  
-    var context = canvas.getContext("2d");
-};
-  
   
     </script>
 </head>
@@ -22,28 +15,7 @@ border: 1px solid black;
 <body>
 
   <canvas id="balldrop" width="1420" height="760"></canvas> 
-<script>
-  
-var y = 200;
-var dy = 1;
-var radius = 30;
-function animate() {
-    requestAnimationFrame(animate);
-    c.clearRect(0,0,innerWidth,innerHeight);
-
-    console.log();
-    c.beginpath();
-    c.arc(200,y,30,0, Math.PI*2,false);
-    c.strokeStyle='blue'
-    c.stroke();
-    c.fill;
-    if (y + radius > innerHeight || x- radius<0){
-        dy= -dy
-    }
-    y +=dy;
-}
-      window.onload = animate;
-      animate();
-   </script>
+  <script src="ball.js"></script>
 </body>
+
 </html>
